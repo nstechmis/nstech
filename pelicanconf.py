@@ -22,6 +22,7 @@ AUTHOR_FEED_RSS = None
 DEFAULT_PAGINATION = 10
 
 THEME = 'theme'
+TESTIMGPATH = '/theme/images/public-domain-images-free-stock-photos-high-quality-resolution-downloads-public-domain-archive-19-1000x667.jpg'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

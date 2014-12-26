@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = ''
+SITEURL = 'http://siongui.github.io/nstech'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = None
