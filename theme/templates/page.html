@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block title -%}
+  {{- page.title }} - {{ super() -}}
+{%- endblock %}
+
+{% block content %}
+  {{ page.content }}
+{% endblock %}
