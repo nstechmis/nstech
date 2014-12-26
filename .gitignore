@@ -4,3 +4,5 @@ Makefile
 fabfile.py
 develop_server.sh
 *.pyc
+srv.pid
+pelican.pid
