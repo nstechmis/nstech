@@ -1,3 +1,4 @@
+{%- from 'localize.html' import gettext -%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +21,7 @@
   </div>
   <div class="row">
     <ul class="nav nav-tabs">
-      <li role="presentation"><a href="{{ SITEURL }}/">Home</a></li>
+      <li role="presentation"><a href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
       {% for p in PAGES %}
       <li role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
       {% endfor %}
@@ -33,14 +34,14 @@
   <div class="row">
     <div class="col-md-4">
       <address>
-        <strong>穠纖科技 Nung Sian Tech.</strong><br>
-        街道<br>
-        城市<br>
+        <strong>{{ SITENAME }}</strong><br>
+        Street(街道)<br>
+        {{ gettext('Kaohsiung, Taiwan', DEFAULT_LANG) }}<br>
       </address>
     </div>
     <div class="col-md-4">
       <address>
-        <abbr title="Phone">P:</abbr> (07) xxx-xxxx
+        <abbr title="Phone">{{ gettext('Tel', DEFAULT_LANG) }}:</abbr> (07) xxx-xxxx
       </address>
     </div>
     <div class="col-md-4">Social Buttons</div>
