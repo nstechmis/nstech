@@ -8,10 +8,11 @@
 第一次的安裝設定
 ----------------
 
-1. 安裝 `pip <https://pypi.python.org/pypi/pip>`_ 及 `virtualenv <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_ :
+1. 安裝 `git <http://git-scm.com/>`_, `pip <https://pypi.python.org/pypi/pip>`_ 及 `virtualenv <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_ :
 
 .. code-block:: bash
 
+    $ sudo apt-get install git
     $ sudo apt-get install python-pip
     $ sudo pip install virtualenv
 
