@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="{{ MAINSITEURL }}/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/theme/css/style.css">
   <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 </head>
 <body>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-3"><img src="{{ MAINSITEURL }}{{ TESTIMGPATH }}" class="img-responsive" alt="穠纖科技 Nung Sian Tech."></div>
+    <div class="col-md-3"><img src="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}{{ TESTIMGPATH }}" class="img-responsive" alt="穠纖科技 Nung Sian Tech."></div>
     <div class="col-md-3"><div class="page-header"><h1>穠纖科技</h1><p>Nung Sian Tech.</p></div></div>
     <div class="col-md-3">Slogan</div>
     <div class="col-md-3">
-      <a href="{{ MAINSITEURL }}/">[English]</a>
+      <a href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/">[English]</a>
       <br>
-      <a href="{{ MAINSITEURL }}/zh/">[傳統中文]</a>
+      <a href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/zh/">[傳統中文]</a>
     </div>
   </div>
   <div class="row">
