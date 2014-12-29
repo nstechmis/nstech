@@ -1,5 +1,6 @@
 cache
 output
+plugins
 Makefile
 fabfile.py
 develop_server.sh
