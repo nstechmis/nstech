@@ -35,6 +35,7 @@ I18N_SUBSITES = {
 }
 
 DIRECT_TEMPLATES = ['index']
+PAGE_ORDER_BY = 'order'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
