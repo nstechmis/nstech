@@ -17,30 +17,27 @@ a.lang:hover {
   background-color: orange;
 }
 
-.nav {
+.nav-index {
   border-top: 2px dotted gray;
   border-bottom: 2px dotted white;
+  text-align: center;
 }
 
-.nav-tabs {
-    text-align: center;
-}
-
-.nav-tabs > li {
+.nav-index > li {
     display:inline-block;
     float: none;
 }
 
-.nav-tabs>li>a {
+.nav-index>li>a {
   color: white;
   font-weight: bold;
 }
 
-.nav-tabs>li>a:hover {
+.nav-index>li>a:hover {
   color: black;
 }
 
-.nav-tabs>li>a.indexactive {
+.nav-index>li>a.indexactive {
   color: black;
 }
 

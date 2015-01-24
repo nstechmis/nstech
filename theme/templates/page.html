@@ -4,12 +4,16 @@
 {%- endblock %}
 
 {% block content %}
-<div class="row">
-  <ul class="nav nav-tabs">
-    {% for p in PAGES %}
-    <li role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+{%- from 'localize.html' import gettext -%}
+<div class="container-fluid">
+  <div class="row">
+    <ul class="nav nav-tabs">
+      {% for p in PAGES %}
+      <li role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
   {{ page.content }}
+  {%- include 'footer.html' -%}
+</div>
 {% endblock %}
