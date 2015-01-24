@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-<div class="row">
+<div class="row bgorange">
   <ul class="nav nav-tabs">
     <li role="presentation"><a href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
     {% for p in PAGES %}
@@ -8,7 +8,7 @@
     {% endfor %}
   </ul>
 </div>
-<div class="row">
+<div class="row bgorange">
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">

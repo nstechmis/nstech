@@ -11,3 +11,12 @@ html, body {
 a.lang:hover {
   color: orange;
 }
+
+.bgorange {
+  background-color: orange;
+}
+
+.nav {
+  border-top: 2px dotted gray;
+  border-bottom: 2px dotted white;
+}
