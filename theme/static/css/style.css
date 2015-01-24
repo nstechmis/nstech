@@ -6,6 +6,7 @@ http://css-tricks.com/tabs-with-round-out-borders/
 
 html, body {
   font-family: "微軟正黑體", "Microsoft JhengHei";
+  color: SteelBlue;
 }
 
 a.lang:hover {
