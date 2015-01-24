@@ -6,7 +6,7 @@ http://css-tricks.com/tabs-with-round-out-borders/
 
 html, body {
   font-family: "微軟正黑體", "Microsoft JhengHei";
-  color: SteelBlue;
+  color: DarkCyan;
 }
 
 a.lang:hover {
@@ -55,4 +55,20 @@ a.lang:hover {
 .footer {
   margin-top: 5px;
   font-weight: bold;
+}
+
+.page-border {
+  border-top: 20px solid DarkCyan;
+  border-bottom: 20px solid DarkCyan;
+  border-right: 25px solid DarkCyan;
+  border-left: 25px solid DarkCyan;
+}
+
+.nav-page {
+  border-top: 6px solid DarkCyan;
+}
+
+.page-main {
+  border-top: 6px solid DarkCyan;
+  border-bottom: 6px solid DarkCyan;
 }

@@ -5,7 +5,7 @@
 
 {% block content %}
 {%- from 'localize.html' import gettext -%}
-<div class="container-fluid">
+<div class="container-fluid page-border">
   <div class="row">
     <div class="col-md-11">
     </div>
@@ -16,13 +16,13 @@
     </div>
   </div>
   <div class="row">
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs nav-page">
       {% for p in PAGES %}
       <li role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
-  {{ page.content }}
+  <div class="row page-main">{{ page.content }}</div>
   {%- include 'footer.html' -%}
 </div>
 {% endblock %}
