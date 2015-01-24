@@ -3,3 +3,4 @@ output
 plugins
 Makefile
 *.pyc
+theme/static/css/ihover.min.css
