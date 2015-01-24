@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/theme/css/style.css">
-  <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+  <title>{%- block title -%}{{ SITENAME }}{%- endblock title -%}</title>
 </head>
 <body>
 <div class="container-fluid">
@@ -24,8 +24,8 @@
     </div>
   </div>
 
-  {% block content %}{% endblock %}
-  {% include 'footer.html' %}
+  {%- block content -%}{%- endblock -%}
+  {%- include 'footer.html' -%}
 
 </div>
 </body>
