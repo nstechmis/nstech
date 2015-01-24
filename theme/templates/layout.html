@@ -8,27 +8,7 @@
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/theme/css/style.css">
   <title>{%- block title -%}{{ SITENAME }}{%- endblock title -%}</title>
 </head>
-<body>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-3"><img src="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}{{ TESTIMGPATH }}" class="img-responsive" alt="穠纖科技 Nung Sian Tech."></div>
-    <div class="col-md-3">
-      <div class="title-cht">穠纖科技</div>
-      <div class="title-eng"><span class="text-orange">N</span>ung <span class="text-orange">S</span>ian <span class="text-orange">T</span>ech.</div>
-    </div>
-    <div class="col-md-5"><span class="text-orange">SloganSloganSloganSloganSloganSloganSloganSloganSloganSloganSloganSloganSlogan</span></div>
-    <div class="col-md-1">
-      <a class="lang" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/">English</a>
-      <br>
-      <a class="lang" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/zh/">繁中</a>
-    </div>
-  </div>
-
-  {%- block content -%}{%- endblock -%}
-  {%- include 'footer.html' -%}
-
-</div>
-</body>
+<body>{%- block content -%}{%- endblock -%}</body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </html>
