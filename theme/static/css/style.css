@@ -43,3 +43,19 @@ a.lang:hover {
 .nav-tabs>li>a.indexactive {
   color: black;
 }
+
+.text-orange {
+  color: orange;
+}
+
+.title-cht {
+  font-size: 4em;
+}
+.title-eng {
+  font-size: 2.5em;
+}
+
+.footer {
+  margin-top: 5px;
+  font-weight: bold;
+}
