@@ -92,3 +92,7 @@ a.lang:hover {
   border-bottom: 6px solid DarkCyan;
   padding: 5px;
 }
+
+.page-main-header {
+  border-bottom: 2px dotted gray;
+}
