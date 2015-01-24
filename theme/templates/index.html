@@ -2,7 +2,7 @@
 {% block content %}
 <div class="row bgorange">
   <ul class="nav nav-tabs">
-    <li role="presentation"><a href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
+    <li role="presentation"><a class="indexactive" href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
     {% for p in PAGES %}
     <li role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
     {% endfor %}

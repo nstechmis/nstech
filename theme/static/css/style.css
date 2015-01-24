@@ -29,3 +29,16 @@ a.lang:hover {
     display:inline-block;
     float: none;
 }
+
+.nav-tabs>li>a {
+  color: white;
+  font-weight: bold;
+}
+
+.nav-tabs>li>a:hover {
+  color: black;
+}
+
+.nav-tabs>li>a.indexactive {
+  color: black;
+}
