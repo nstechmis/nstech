@@ -3,3 +3,11 @@ http://lea.verou.me/2013/10/slanted-tabs-with-css-3d-transforms/
 http://stackoverflow.com/questions/16825042/how-to-create-slanted-tabs-with-a-border-in-css
 http://css-tricks.com/tabs-with-round-out-borders/
 */
+
+html, body {
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+}
+
+a.lang:hover {
+  color: orange;
+}
