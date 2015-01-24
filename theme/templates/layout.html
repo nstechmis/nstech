@@ -20,15 +20,8 @@
       <a class="lang" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/zh/">繁中</a>
     </div>
   </div>
-  <div class="row">
-    <ul class="nav nav-tabs">
-      <li role="presentation"><a href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
-      {% for p in PAGES %}
-      <li role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="row">{% block content %}{% endblock %}</div>
+
+  {% block content %}{% endblock %}
 
   <hr>
 

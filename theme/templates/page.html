@@ -4,5 +4,12 @@
 {%- endblock %}
 
 {% block content %}
+<div class="row">
+  <ul class="nav nav-tabs">
+    {% for p in PAGES %}
+    <li role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
   {{ page.content }}
 {% endblock %}

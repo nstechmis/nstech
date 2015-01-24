@@ -1,5 +1,14 @@
 {% extends "layout.html" %}
 {% block content %}
+<div class="row">
+  <ul class="nav nav-tabs">
+    <li role="presentation"><a href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
+    {% for p in PAGES %}
+    <li role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+<div class="row">
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -39,5 +48,6 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
 </div>
 {% endblock content %}
