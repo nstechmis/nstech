@@ -96,3 +96,8 @@ a.lang:hover {
 .page-main-header {
   border-bottom: 2px dotted gray;
 }
+
+.dotted-line {
+  border-top: 2px dotted gray;
+  margin-top: 3em;
+}
