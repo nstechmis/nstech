@@ -3,16 +3,9 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-3"><img src="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}{{ TESTIMGPATH }}" class="img-responsive" alt="穠纖科技 Nung Sian Tech."></div>
-    <div class="col-md-3">
-      <div class="title-cht">穠纖科技</div>
-      <div class="title-eng"><span class="text-orange">N</span>ung <span class="text-orange">S</span>ian <span class="text-orange">T</span>ech.</div>
-    </div>
+    <div class="col-md-3">{% include 'tmp-name.html' %}</div>
     <div class="col-md-5"><span class="text-orange">Slogan</span></div>
-    <div class="col-md-1">
-      <a class="lang" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/">English</a>
-      <br>
-      <a class="lang" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/zh/">繁中</a>
-    </div>
+    <div class="col-md-1">{% include 'tmp-lang.html' %}</div>
   </div>
   <div class="row bgorange">
     <ul class="nav nav-tabs nav-index">

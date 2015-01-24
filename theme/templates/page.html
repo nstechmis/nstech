@@ -7,13 +7,10 @@
 {%- from 'localize.html' import gettext -%}
 <div class="container-fluid page-border">
   <div class="row">
-    <div class="col-md-11">
-    </div>
-    <div class="col-md-1">
-      <a class="lang" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/">English</a>
-      <br>
-      <a class="lang" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/zh/">繁中</a>
-    </div>
+    <div class="col-md-5"></div>
+    <div class="col-md-3">{% include 'tmp-name.html' %}</div>
+    <div class="col-md-3"></div>
+    <div class="col-md-1">{% include 'tmp-lang.html' %}</div>
   </div>
   <div class="row">
     <ul class="nav nav-tabs nav-page">
