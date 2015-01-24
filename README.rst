@@ -33,23 +33,25 @@
     $ cd ~/dev/nstechdev/
     $ git clone https://github.com/siongui/nstech
 
-4. 下載 `iHover <http://gudh.github.io/ihover/dist/>`_ (`src <https://github.com/gudh/ihover>`_) 的minified CSS檔到 ``~/dev/nstechdev/nstech/theme/static/css`` 目錄下
-
-5. 安裝必要工具:
+4. 安裝必要工具:
 
 .. code-block:: bash
 
     $ cd ~/dev/nstechdev/nstech
     $ sudo pip install -r requirements.txt
 
-6. 安裝pelican的 `i18n_subsites <https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites>`_ plugin:
+5. 安裝pelican的 `i18n_subsites <https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites>`_ plugin:
+
     下載 ``i18n_subsites`` 目錄並放到 ``~/dev/nstechdev/nstech/plugins`` 目錄下
 
-7. 產生CSS:
+6. 下載 `iHover <http://gudh.github.io/ihover/dist/>`_ (`src <https://github.com/gudh/ihover>`_)並產生CSS檔:
 
 .. code-block:: bash
 
-    $ python -mscss < theme/scss/style.scss > theme/static/css/style.css
+    $ cd ~/dev/nstechdev/nstech/theme/scss/
+    $ wget https://raw.githubusercontent.com/gudh/ihover/gh-pages/src/ihover.css
+    $ cd ~/dev/nstechdev/nstech
+    $ python -mscss < theme/scss/style.scss -o theme/static/css/style.css
 
 
 日常開發
@@ -61,7 +63,7 @@
     $ source bin/activate
     $ cd nstech
     # if scss file changes
-    $ python -mscss < theme/scss/style.scss > theme/static/css/style.css
+    $ python -mscss < theme/scss/style.scss -o theme/static/css/style.css
     $ make html
     # start edit and develope
 
