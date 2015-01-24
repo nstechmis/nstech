@@ -83,6 +83,9 @@ a.lang:hover {
   color: orange;
 }
 
+.nav-page>li>a.text-orange {
+  color: orange;
+}
 
 .page-main {
   border-top: 6px solid DarkCyan;

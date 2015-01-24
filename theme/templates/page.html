@@ -15,7 +15,7 @@
   <div class="row">
     <ul class="nav nav-tabs nav-page">
       {% for p in PAGES %}
-      <li role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+      <li role="presentation"><a {% if p == page %}class="text-orange"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
