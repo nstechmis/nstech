@@ -66,9 +66,26 @@ a.lang:hover {
 
 .nav-page {
   border-top: 6px solid DarkCyan;
+  text-align: center;
 }
+
+.nav-page>li {
+  display:inline-block;
+  float: none;
+}
+
+.nav-page>li>a {
+  color: DarkCyan;
+  font-weight: bold;
+}
+
+.nav-page>li>a:hover {
+  color: orange;
+}
+
 
 .page-main {
   border-top: 6px solid DarkCyan;
   border-bottom: 6px solid DarkCyan;
+  padding: 5px;
 }
