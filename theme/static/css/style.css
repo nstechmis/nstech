@@ -23,9 +23,9 @@ a.lang:hover {
   text-align: center;
 }
 
-.nav-index > li {
-    display:inline-block;
-    float: none;
+.nav-index>li {
+  display:inline-block;
+  float: none;
 }
 
 .nav-index>li>a {

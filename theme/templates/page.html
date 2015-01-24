@@ -7,6 +7,15 @@
 {%- from 'localize.html' import gettext -%}
 <div class="container-fluid">
   <div class="row">
+    <div class="col-md-11">
+    </div>
+    <div class="col-md-1">
+      <a class="lang" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/">English</a>
+      <br>
+      <a class="lang" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/zh/">繁中</a>
+    </div>
+  </div>
+  <div class="row">
     <ul class="nav nav-tabs">
       {% for p in PAGES %}
       <li role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
