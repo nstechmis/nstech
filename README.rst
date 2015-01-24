@@ -35,6 +35,7 @@
 
 4. 下載 `iHover <http://gudh.github.io/ihover/dist/>`_ (`src <https://github.com/gudh/ihover>`_) 的minified CSS檔到 ``~/dev/nstechdev/nstech/theme/static/css`` 目錄下
 
+
 5. 安裝必要工具:
 
 .. code-block:: bash
@@ -46,6 +47,12 @@
 
     下載 ``i18n_subsites`` 目錄並放到 ``~/dev/nstechdev/nstech/plugins`` 目錄下
 
+7. 產生CSS:
+
+.. code-block:: bash
+
+    $ python -mscss < theme/scss/style.scss > theme/static/css/style.css
+
 
 日常開發
 --------
@@ -55,6 +62,9 @@
     $ cd ~/dev/nstechdev/
     $ source bin/activate
     $ cd nstech
+    # if scss file changes
+    $ python -mscss < theme/scss/style.scss > theme/static/css/style.css
+    $ make html
     # start edit and develope
 
 

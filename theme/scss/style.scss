@@ -1,0 +1,89 @@
+/*
+http://lea.verou.me/2013/10/slanted-tabs-with-css-3d-transforms/
+http://stackoverflow.com/questions/16825042/how-to-create-slanted-tabs-with-a-border-in-css
+http://css-tricks.com/tabs-with-round-out-borders/
+*/
+
+$font-stack: "微軟正黑體", "Microsoft JhengHei";
+$primary-color-1: DarkCyan;
+$primary-color-2: orange;
+$primary-color-3: gray;
+$primary-color-4: black;
+
+html, body {
+  font-family: $font-stack;
+  color: $primary-color-1;
+}
+
+a.lang {
+  color: $primary-color-1;
+  &:hover { color: $primary-color-2; }
+}
+
+.text-orange { color: $primary-color-2; }
+.bgorange { background-color: $primary-color-2; }
+
+.nav-index {
+  border-top: 2px dotted $primary-color-3;
+  border-bottom: 2px dotted white;
+  text-align: center;
+
+  > li {
+    display:inline-block;
+    float: none;
+
+    > a {
+      color: white;
+      font-weight: bold;
+    }
+
+    > a:hover { color: $primary-color-4; }
+    > a.indexactive { color: $primary-color-4; }
+  }
+}
+
+.title-cht { font-size: 4em; }
+.title-eng { font-size: 2.5em; }
+
+.footer {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.page-border {
+  border-top: 20px solid $primary-color-1;
+  border-bottom: 20px solid $primary-color-1;
+  border-right: 25px solid $primary-color-1;
+  border-left: 25px solid $primary-color-1;
+}
+
+.nav-page {
+  border-top: 6px solid $primary-color-1;
+  text-align: center;
+
+  > li {
+    display:inline-block;
+    float: none;
+
+    > a {
+      color: $primary-color-1;
+      font-weight: bold;
+    }
+
+    > a:hover { color: $primary-color-2; }
+    > a.text-orange { color: $primary-color-2; }
+  }
+}
+
+.page-main {
+  border-top: 6px solid $primary-color-1;
+  border-bottom: 6px solid $primary-color-1;
+  padding: 5px;
+}
+
+.page-main-header { border-bottom: 2px dotted $primary-color-3; }
+
+.dotted-line {
+  border-top: 2px dotted $primary-color-3;
+  margin-top: 3em;
+}

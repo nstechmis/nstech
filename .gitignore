@@ -4,3 +4,4 @@ plugins
 Makefile
 *.pyc
 theme/static/css/ihover.min.css
+theme/static/css/style.css
