@@ -27,7 +27,7 @@ a.lang {
 .bg-orange { background-color: $primary-color-2; }
 .bg-green { background-color: $primary-color-1; }
 
-.nav-index {
+@mixin nav-index-basic($color1) {
   border-top: 2px dotted $primary-color-3;
   border-bottom: 2px dotted white;
   text-align: center;
@@ -41,10 +41,13 @@ a.lang {
       font-weight: bold;
     }
 
-    > a:hover { color: $primary-color-4; }
+    > a:hover { color: $color1; }
     > a.index-active { color: $primary-color-4; }
   }
 }
+
+.nav-index { @include nav-index-basic($primary-color-1); }
+.nav-index2 { @include nav-index-basic($primary-color-2); }
 
 .footer {
   margin-top: 5px;
