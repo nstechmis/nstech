@@ -3,7 +3,6 @@ http://lea.verou.me/2013/10/slanted-tabs-with-css-3d-transforms/
 http://stackoverflow.com/questions/16825042/how-to-create-slanted-tabs-with-a-border-in-css
 http://css-tricks.com/tabs-with-round-out-borders/
 */
-@import "ihover.css";
 
 $font-stack: "微軟正黑體", "Microsoft JhengHei";
 $primary-color-1: ForestGreen;
@@ -51,3 +50,46 @@ a.lang {
   margin-top: 5px;
   font-weight: bold;
 }
+
+/* image hover showing description */
+@mixin transform($percent) {
+  -webkit-transform: $percent;
+     -moz-transform: $percent;
+      -ms-transform: $percent;
+          transform: $percent;
+}
+
+.thumbnail-show {
+  display: inline;
+  text-align: center;
+  position: absolute;
+  transition: background 0.3s ease, padding 0.3s linear;
+  background-color: rgba(0, 0, 0, 0.66);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.thumbnail-box {
+  display: inline-block !important;
+  position: relative !important;
+  overflow: hidden;
+
+  a:hover { 
+    .thumbnail-box-description {
+      @extend .thumbnail-show
+    }
+  }
+}
+
+.thumbnail-box-description {
+  display: none;
+
+  div {
+    position: relative;
+    top: 15%;
+    @include transform(-50%);
+  }
+}
+/* end of image hover */

@@ -44,12 +44,10 @@
 
     下載 ``i18n_subsites`` 目錄並放到 ``~/dev/nstechdev/nstech/plugins`` 目錄下
 
-6. 下載 `iHover <http://gudh.github.io/ihover/dist/>`_ (`src <https://github.com/gudh/ihover>`_)並產生CSS檔:
+6. 產生CSS檔:
 
 .. code-block:: bash
 
-    $ cd ~/dev/nstechdev/nstech/theme/scss/
-    $ wget https://raw.githubusercontent.com/gudh/ihover/gh-pages/src/ihover.css
     $ cd ~/dev/nstechdev/nstech
     $ python -mscss < theme/scss/style.scss -o theme/static/css/style.css
 
@@ -72,3 +70,11 @@
 ----
 
 `Online reStructuredText editor <http://rst.ninjs.org/>`_
+
+`Can I use an image to trigger a modal window in Bootstrap? <http://stackoverflow.com/questions/15423532/can-i-use-an-image-to-trigger-a-modal-window-in-bootstrap>`_
+
+`Bootstrap Image trigger modal example code <http://www.bootply.com/7wOLkC9AVX>`_
+
+`iHover <http://gudh.github.io/ihover/dist/>`_ (`src <https://github.com/gudh/ihover>`_)
+
+`bootstrap image hover overlay with icon <http://stackoverflow.com/questions/26823237/bootstrap-image-hover-overlay-with-icon>`_
