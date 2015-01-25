@@ -4,27 +4,14 @@
 {%- endblock %}
 
 {% block content %}
-{%- from 'localize.html' import gettext -%}
-<div class="container-fluid page-border">
-  <div class="row">
-    <div class="col-md-5"></div>
-    <div class="col-md-3">{% include 'tmp-name.html' %}</div>
-    <div class="col-md-3"></div>
-    <div class="col-md-1">{% include 'tmp-lang.html' %}</div>
-  </div>
-  <div class="row">
-    <div class="col-md-5"><hr class="dotted-line"></div>
-    <div class="col-md-2"><img src="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}{{ TESTIMGPATH }}" class="img-responsive" alt="穠纖科技 Nung Sian Tech."></div>
-    <div class="col-md-5"><hr class="dotted-line"></div>
-  </div>
-  <div class="row">
-    <ul class="nav nav-tabs nav-page">
-      {% for p in PAGES %}
-      <li role="presentation"><a {% if p == page %}class="text-orange"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="row page-main">{{ page.content }}</div>
-  {%- include 'footer.html' -%}
+<div class="row bg-green">
+  <ul class="nav nav-tabs nav-index">
+    <li role="presentation"><a href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
+    {%- for p in PAGES -%}
+    <li role="presentation"><a {% if p == page %}class="indexactive"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+    {%- endfor -%}
+  </ul>
 </div>
+
+<div class="row page-main">{{ page.content }}</div>
 {% endblock %}
