@@ -1,21 +1,15 @@
 {% extends "layout.html" %}
 {% block content %}
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-3"><img src="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}{{ TESTIMGPATH }}" class="img-responsive" alt="穠纖科技 Nung Sian Tech."></div>
-    <div class="col-md-3">{% include 'tmp-name.html' %}</div>
-    <div class="col-md-5"><span class="text-orange">Slogan</span></div>
-    <div class="col-md-1">{% include 'tmp-lang.html' %}</div>
-  </div>
-  <div class="row bgorange">
-    <ul class="nav nav-tabs nav-index">
-      <li role="presentation"><a class="indexactive" href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
-      {%- for p in PAGES -%}
-      <li role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-      {%- endfor -%}
-    </ul>
-  </div>
-  {%- include 'index-carousel.html' -%}
-  {%- include 'footer.html' -%}
+
+<div class="row bgorange">
+  <ul class="nav nav-tabs nav-index">
+    <li role="presentation"><a class="indexactive" href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
+    {%- for p in PAGES -%}
+    <li role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+    {%- endfor -%}
+  </ul>
 </div>
+
+{%- include 'index-carousel.html' -%}
+
 {% endblock content %}

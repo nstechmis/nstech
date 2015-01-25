@@ -5,10 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/theme/css/ihover.min.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/theme/css/style.css">
   <title>{%- block title -%}{{ SITENAME }}{%- endblock title -%}</title>
 </head>
-<body>{%- block content -%}{%- endblock -%}</body>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2"><img src="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}{{ TESTIMGPATH }}" class="img-responsive" alt="穠纖科技 Nung Sian Tech."></div>
+    <div class="col-md-4">{% include 'tmp-name.html' %}</div>
+    <div class="col-md-5"><span class="text-orange">Slogan</span></div>
+    <div class="col-md-1">{% include 'tmp-lang.html' %}</div>
+  </div>
+  {%- block content -%}{%- endblock -%}
+  {%- include 'footer.html' -%}
+</div>
+
+</body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </html>

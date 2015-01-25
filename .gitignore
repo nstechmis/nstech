@@ -5,3 +5,4 @@ Makefile
 *.pyc
 theme/scss/ihover.css
 theme/static/css/style.css
+theme/static/css/ihover.min.css
