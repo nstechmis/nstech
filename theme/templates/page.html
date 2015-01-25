@@ -8,7 +8,7 @@
   <ul class="nav nav-tabs nav-index">
     <li role="presentation"><a href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
     {%- for p in PAGES -%}
-    <li role="presentation"><a {% if p == page %}class="indexactive"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+    <li role="presentation"><a {% if p == page %}class="index-active"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
     {%- endfor -%}
   </ul>
 </div>

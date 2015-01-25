@@ -16,6 +16,9 @@ html, body {
   color: $primary-color-1;
 }
 
+.title-cht { font-size: 4em; }
+.title-eng { font-size: 2.5em; }
+
 a.lang {
   color: $primary-color-1;
   &:hover { color: $primary-color-2; }
@@ -40,12 +43,9 @@ a.lang {
     }
 
     > a:hover { color: $primary-color-4; }
-    > a.indexactive { color: $primary-color-4; }
+    > a.index-active { color: $primary-color-4; }
   }
 }
-
-.title-cht { font-size: 4em; }
-.title-eng { font-size: 2.5em; }
 
 .footer {
   margin-top: 5px;
