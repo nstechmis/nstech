@@ -55,6 +55,12 @@ a.lang {
   font-weight: bold;
 }
 
+/* product items up and buttom space */
+.product-item-space {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /* image hover showing description */
 @mixin transform($percent) {
   -webkit-transform: $percent;
