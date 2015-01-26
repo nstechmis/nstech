@@ -8,7 +8,6 @@ $font-stack: "微軟正黑體", "Microsoft JhengHei";
 $primary-color-1: ForestGreen;
 $primary-color-2: orange;
 $primary-color-3: gray;
-$primary-color-4: black;
 $dotted-line-width: 3px;
 
 html, body {
@@ -44,7 +43,7 @@ a.lang {
     }
 
     > a:hover { color: $color1; }
-    > a.index-active { color: $primary-color-4; }
+    > a.index-active { color: $color1; }
   }
 }
 
