@@ -96,3 +96,7 @@ a.lang {
   }
 }
 /* end of image hover */
+
+/* over-write bootstrap setting */
+.carousel-control.left { background-image: none; }
+.carousel-control.right { background-image: none; }
