@@ -9,6 +9,7 @@ $primary-color-1: ForestGreen;
 $primary-color-2: orange;
 $primary-color-3: gray;
 $primary-color-4: black;
+$dotted-line-width: 3px;
 
 html, body {
   font-family: $font-stack;
@@ -27,9 +28,10 @@ a.lang {
 .bg-orange { background-color: $primary-color-2; }
 .bg-green { background-color: $primary-color-1; }
 
+.dotted-buttom-line { border-bottom: $dotted-line-width dotted $primary-color-3; }
+
 @mixin nav-index-basic($color1) {
-  border-top: 2px dotted $primary-color-3;
-  border-bottom: 2px dotted white;
+  border-bottom: $dotted-line-width dotted white;
   text-align: center;
 
   > li {
