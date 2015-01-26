@@ -65,7 +65,7 @@ a.lang {
 
 .thumbnail-show {
   display: inline;
-  text-align: center;
+  //text-align: center;
   position: absolute;
   transition: background 0.3s ease, padding 0.3s linear;
   background-color: rgba(0, 0, 0, 0.66);
@@ -76,6 +76,7 @@ a.lang {
 }
 
 .thumbnail-box {
+  //display: inline-block !important;
   position: relative !important;
   overflow: hidden;
 
@@ -91,7 +92,8 @@ a.lang {
 
   div {
     position: relative;
-    top: 15%;
+    padding-left: 12px;
+    //top: 15%;
     @include transform(-50%);
   }
 }
