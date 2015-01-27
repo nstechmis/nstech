@@ -22,7 +22,8 @@ AUTHOR_FEED_RSS = None
 DEFAULT_PAGINATION = 10
 
 THEME = 'theme'
-TESTIMGPATH = '/theme/images/public-domain-images-free-stock-photos-high-quality-resolution-downloads-public-domain-archive-19-1000x667.jpg'
+
+# test image url: http://imgur.com/0ruqHmQ
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites']
