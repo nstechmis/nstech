@@ -109,3 +109,9 @@ a.lang {
 /* over-write bootstrap setting */
 .carousel-control.left { background-image: none; }
 .carousel-control.right { background-image: none; }
+
+
+// change abbr default style
+abbr[title="Phone"], abbr[title="Email"] {
+  border-bottom: 0 dotted #777;
+}
