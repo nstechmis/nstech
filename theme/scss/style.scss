@@ -39,7 +39,7 @@ a.lang {
 
     > a {
       color: white;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: bold;
     }
 
@@ -114,4 +114,8 @@ a.lang {
 // change abbr default style
 abbr[title="Phone"], abbr[title="Email"] {
   border-bottom: 0 dotted #777;
+}
+
+.product-header {
+  color: white;
 }
