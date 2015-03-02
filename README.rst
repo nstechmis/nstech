@@ -74,7 +74,7 @@
 
     $ make clean
     $ make publish
-    $ make github
+    $ make github_upload
 
 參考
 ----
