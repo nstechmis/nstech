@@ -44,12 +44,15 @@
 
     下載 ``i18n_subsites`` 目錄並放到 ``~/dev/nstechdev/nstech/plugins`` 目錄下
 
+.. code-block:: bash
+
+    $ make download
+
 6. 產生CSS檔:
 
 .. code-block:: bash
 
-    $ cd ~/dev/nstechdev/nstech
-    $ python -mscss < theme/scss/style.scss -o theme/static/css/style.css
+    $ make scss
 
 
 日常開發
@@ -61,10 +64,17 @@
     $ source bin/activate
     $ cd nstech
     # if scss file changes
-    $ python -mscss < theme/scss/style.scss -o theme/static/css/style.css
     $ make html
     # start edit and develope
 
+上傳
+----
+
+.. code-block:: bash
+
+    $ make clean
+    $ make publish
+    $ make github
 
 參考
 ----

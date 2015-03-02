@@ -1,6 +1,5 @@
 cache
 output
 plugins
-Makefile
 *.pyc
 theme/static/css/style.css
