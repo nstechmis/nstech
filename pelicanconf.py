@@ -10,7 +10,8 @@ PATH = 'content'
 
 STATIC_PATHS = ['extra']
 EXTRA_PATH_METADATA = {'extra/BingSiteAuth.xml': {'path': 'BingSiteAuth.xml'},
-                       'extra/google90dd5bde7765c78d': {'path': 'google90dd5bde7765c78d.html'},}
+                       'extra/google90dd5bde7765c78d': {'path': 'google90dd5bde7765c78d.html'},
+                       'extra/CNAME': {'path': 'CNAME'},}
 
 TIMEZONE = 'Asia/Taipei'
 
