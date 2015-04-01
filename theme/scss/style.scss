@@ -49,7 +49,6 @@ a.lang {
 }
 
 .nav-index { @include nav-index-basic($primary-color-1); }
-.nav-index2 { @include nav-index-basic($primary-color-2); }
 
 .footer {
   margin-top: 5px;

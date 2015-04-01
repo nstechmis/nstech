@@ -22,6 +22,16 @@
     <div class="col-md-5"><span class="text-orange">Slogan</span></div>
     <div class="col-md-1">{% include 'tmp-lang.html' %}</div>
   </div>
+
+  <div class="row bg-orange">
+    <ul class="nav nav-tabs nav-index">
+      <li role="presentation"><a {% if page_name == "index" %}class="index-active"{% endif %} href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
+      {%- for p in PAGES -%}
+      <li role="presentation"><a {% if p == page %}class="index-active"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </div>
+
   {%- block content -%}{%- endblock -%}
   {%- include 'footer.html' -%}
 </div>

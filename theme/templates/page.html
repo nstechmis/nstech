@@ -4,14 +4,5 @@
 {%- endblock %}
 
 {% block content %}
-<div class="row {% if page.order == "2" %}bg-green{% else %}bg-orange{% endif %}">
-  <ul class="nav nav-tabs {% if page.order == "2" %}nav-index2{% else %}nav-index{% endif %}">
-    <li role="presentation"><a href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
-    {%- for p in PAGES -%}
-    <li role="presentation"><a {% if p == page %}class="index-active"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-    {%- endfor -%}
-  </ul>
-</div>
-
 <div class="row">{{ page.content }}</div>
 {% endblock %}

@@ -1,15 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<div class="row bg-orange">
-  <ul class="nav nav-tabs nav-index">
-    <li role="presentation"><a class="index-active" href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
-    {%- for p in PAGES -%}
-    <li role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-    {%- endfor -%}
-  </ul>
-</div>
-
 {%- include 'index-carousel.html' -%}
 
 {% endblock content %}
