@@ -21,6 +21,8 @@ AUTHOR_FEED_RSS = None
 
 DELETE_OUTPUT_DIRECTORY = True
 
+GOOGLE_ANALYTICS = True
+
 # Following items are often useful when publishing
 
 #DISQUS_SITENAME = ""
