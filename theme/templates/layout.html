@@ -12,7 +12,7 @@
 <body>
 
 <div class="container-fluid">
-  <div class="row dotted-buttom-line">
+  <div class="row dotted-buttom-line hidden-xs">
     <div class="col-md-2">
       <a href="{{ SITEURL }}/">
         <img src="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/theme/images/logo.png" class="img-responsive" alt="穠纖科技 Nung Sian Tech.">
@@ -23,13 +23,29 @@
     <div class="col-md-1">{% include 'tmp-lang.html' %}</div>
   </div>
 
-  <div class="row bg-orange">
+  <div class="row bg-orange hidden-xs">
     <ul class="nav nav-tabs nav-index">
       <li role="presentation"><a {% if page_name == "index" %}class="index-active"{% endif %} href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a></li>
       {%- for p in PAGES -%}
       <li role="presentation"><a {% if p == page %}class="index-active"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
       {%- endfor -%}
     </ul>
+  </div>
+
+  <div class="row visible-xs-block">
+    <div class="mobile-nav-title"><h3><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h3></div><!--
+ --><div class="toggleable-window">
+      <input type="checkbox" class="toggle" id="punch" checked>
+      <label for="punch">&equiv;</label>
+      <div>
+        <a href="{{ SITEURL }}/">{{ gettext('Home', DEFAULT_LANG) }}</a>
+        {%- for p in PAGES -%}
+        <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+        {%- endfor -%}
+        <span><a href="/">English</a></span>
+        <span><a href="/zh/">傳統中文</a></span>
+      </div>
+    </div>
   </div>
 
   {%- block content -%}{%- endblock -%}

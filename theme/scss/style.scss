@@ -119,3 +119,47 @@ abbr[title="Phone"], abbr[title="Email"] {
   color: white;
   font-size: 32px;
 }
+
+/* pure css toggle-able window */
+.toggleable-window {
+  input.toggle {display: none;}
+  label {
+    font-size: 3em;
+    font-weight:bold;
+    &:hover, &:focus {
+      cursor: pointer;
+    }
+  }
+  input.toggle:checked ~ label {font-weight:normal;}
+  input.toggle:checked ~ div {display: none;}
+  div {
+    position: absolute;
+    width: 100%;
+  }
+}
+.mobile-nav-title {
+  display: inline-block;
+  width: 85%;
+}
+.toggleable-window {
+  display: inline-block;
+  width: 15%;
+  div {
+    z-index: 100;
+    left: 0;
+    right: 0;
+    a {
+      display: block;
+      background-color: $primary-color-2;
+      color: white;
+      font-size: 1.5em;
+      margin: 0 2px 0 2px;
+      padding: 6px 6px 6px 10px;
+      border-bottom: 2px solid #202020;
+      text-decoration: none;
+    }
+    span a {
+      background-color: $primary-color-1;
+    }
+  }
+}
