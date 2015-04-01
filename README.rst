@@ -31,7 +31,7 @@
 .. code-block:: bash
 
     $ cd ~/dev/nstechdev/
-    $ git clone https://github.com/siongui/nstech
+    $ git clone https://github.com/nstechmis/nstech.git
 
 4. 安裝必要工具:
 
