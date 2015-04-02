@@ -140,6 +140,11 @@ abbr[title="Phone"], abbr[title="Email"] {
 .mobile-nav-title {
   display: inline-block;
   width: 85%;
+  img {
+    float: left;
+    margin: 20px 10px 10px 10px;
+  }
+  h3 { float: left; }
 }
 .toggleable-window {
   display: inline-block;
