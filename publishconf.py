@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://nstechmis.github.io'
+SITEURL = 'http://www.nstech.com.tw'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = None
