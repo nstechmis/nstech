@@ -15,6 +15,30 @@ html, body {
   color: $primary-color-1;
 }
 
+
+h2 {
+  color :$primary-color-1;
+}
+
+table {
+	border-style: solid;
+    border-width: 1px;
+	border-color: $primary-color-1;
+}
+
+th {
+	color:#FFFFFF;
+	background-color: $primary-color-1;
+	border-style: solid;
+	border-width: 1px;
+	border-color:#FFFFFF;
+}
+td {
+	border-style: solid;
+	border-width: 1px;	
+	border-color:$primary-color-1;
+}
+
 .title-cht { font-size: 4em; }
 .title-eng { font-size: 2.5em; }
 
@@ -116,7 +140,7 @@ abbr[title="Phone"], abbr[title="Email"] {
 }
 
 .product-header {
-  color: white;
+  color: $primary-color-2;
   font-size: 32px;
 }
 
