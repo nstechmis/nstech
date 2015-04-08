@@ -1,0 +1,5 @@
+(nstechdev)ycchang@ubuntu:~/dev/nstechdev/nstech$ make scss
+[ -d /home/ycchang/dev/nstechdev/nstech/theme/static/css ] || mkdir -p /home/ycchang/dev/nstechdev/nstech/theme/static/css
+python -mscss < /home/ycchang/dev/nstechdev/nstech/theme/scss/style.scss -I /home/ycchang/dev/nstechdev/nstech/theme/scss -o /home/ycchang/dev/nstechdev/nstech/theme/static/css/style.css
+/home/ycchang/dev/nstechdev/bin/python: No module named scss
+make: *** [scss] Error 1
