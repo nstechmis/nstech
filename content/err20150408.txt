@@ -1,5 +1,52 @@
-(nstechdev)ycchang@ubuntu:~/dev/nstechdev/nstech$ make scss
+ycchang@ubuntu:~/dev/nstechdev$ source bin/activate
+(nstechdev)ycchang@ubuntu:~/dev/nstechdev$ cd nstech
+(nstechdev)ycchang@ubuntu:~/dev/nstechdev/nstech$ sudo pip install -r requirements.txt
+[sudo] password for ycchang: 
+Requirement already satisfied (use --upgrade to upgrade): pelican in /usr/local/lib/python2.7/dist-packages (from -r requirements.txt (line 1))
+Requirement already satisfied (use --upgrade to upgrade): ghp-import in /usr/local/lib/python2.7/dist-packages (from -r requirements.txt (line 2))
+Requirement already satisfied (use --upgrade to upgrade): pyScss in /usr/local/lib/python2.7/dist-packages (from -r requirements.txt (line 3))
+Requirement already satisfied (use --upgrade to upgrade): six in /usr/lib/python2.7/dist-packages (from pyScss->-r requirements.txt (line 3))
+Requirement already satisfied (use --upgrade to upgrade): enum34 in /usr/local/lib/python2.7/dist-packages (from pyScss->-r requirements.txt (line 3))
+Requirement already satisfied (use --upgrade to upgrade): pathlib in /usr/local/lib/python2.7/dist-packages (from pyScss->-r requirements.txt (line 3))
+Cleaning up...
+(nstechdev)ycchang@ubuntu:~/dev/nstechdev/nstech$ ls
+content   pelicanconf.py   plugins         publishconf.pyc  requirements.txt
+Makefile  pelicanconf.pyc  publishconf.py  README.rst       theme
+(nstechdev)ycchang@ubuntu:~/dev/nstechdev/nstech$ sudo pull
+sudo: pull: command not found
+(nstechdev)ycchang@ubuntu:~/dev/nstechdev/nstech$ git pull
+remote: Counting objects: 42, done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 42 (delta 30), reused 34 (delta 22), pack-reused 0
+Unpacking objects: 100% (42/42), done.
+From https://github.com/nstechmis/nstech
+   78ed5f9..f29a164  master     -> origin/master
+Updating 78ed5f9..f29a164
+Fast-forward
+ content/extra/BingSiteAuth.xml       |   4 +-
+ content/extra/sitemap.xml            |  21 +++
+ content/pages/about.html             |  34 +++--
+ content/pages/about_zh_TW.html       |  25 +++-
+ content/pages/application.html       |   1 +
+ content/pages/application_zh_TW.html |   1 +
+ content/pages/contact.html           |   1 +
+ content/pages/contact_zh_TW.html     |   1 +
+ content/pages/products.html          | 262 +++++++++++++++++++----------------
+ content/pages/products_zh_TW.html    | 260 ++++++++++++++++++----------------
+ content/pages/report.html            |   1 +
+ content/pages/report_zh_TW.html      |   1 +
+ pelicanconf.py                       |   7 +-
+ publishconf.py                       |   2 +-
+ theme/templates/layout.html          |   8 +-
+ theme/templates/tmp-name.html        |   2 +-
+ 16 files changed, 356 insertions(+), 275 deletions(-)
+ create mode 100644 content/extra/sitemap.xml
+(nstechdev)ycchang@ubuntu:~/dev/nstechdev/nstech$ make clean
+[ ! -d /home/ycchang/dev/nstechdev/nstech/output ] || rm -rf /home/ycchang/dev/nstechdev/nstech/output
+[ ! -d /home/ycchang/dev/nstechdev/nstech/cache ]  || rm -rf /home/ycchang/dev/nstechdev/nstech/cache
+(nstechdev)ycchang@ubuntu:~/dev/nstechdev/nstech$ make publish
 [ -d /home/ycchang/dev/nstechdev/nstech/theme/static/css ] || mkdir -p /home/ycchang/dev/nstechdev/nstech/theme/static/css
 python -mscss < /home/ycchang/dev/nstechdev/nstech/theme/scss/style.scss -I /home/ycchang/dev/nstechdev/nstech/theme/scss -o /home/ycchang/dev/nstechdev/nstech/theme/static/css/style.css
 /home/ycchang/dev/nstechdev/bin/python: No module named scss
 make: *** [scss] Error 1
+(nstechdev)ycchang@ubuntu:~/dev/nstechdev/nstech$ 
