@@ -47,8 +47,14 @@ td {
 }
 
 
-.title-cht { font-size: 2em; }
-.title-eng { font-size: 2em; }
+.title-cht { 
+	font-size: 2em; 
+	vertical-align: middle;
+}
+.title-eng { 
+	font-size: 2em; 
+	vertical-align: middle;
+}
 
 a.lang {
   color: $primary-color-1;
@@ -179,6 +185,7 @@ abbr[title="Phone"], abbr[title="Email"] {
   }
 }
 .mobile-nav-title {
+  vertical-align: middle;
   display: inline-block;
   width: 85%;
   img {
