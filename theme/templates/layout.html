@@ -11,17 +11,26 @@
   <script type="text/javascript">var switchTo5x=true;</script>
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "41ce74ef-a6b0-422d-988d-a84b2a5b8d88", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
+<script>
+document.oncontextmenu=function(){ return false; }
+document.onselectstart=function(){ return false; }
+document.ondragstart=function(){ return false; }  
+document.body.style.MozUserSelect = 'none';
+</script>
+<style type='text/css' media='print'>
+.noPrint { display: none; }
+</style>
 </head>
-<body>
+<body class="noPrint">
 
 <div class="container-fluid">
   <div class="row dotted-buttom-line hidden-xs" style="height:112px;vertical-align: middle;">
-    <div class="col-md-2">
+    <div class="col-md-10" style="background-color:#24b6a1;">
       <a href="{{ SITEURL }}/">
-        <img src="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/theme/images/logo_m.png" class="img-responsive" alt="穠纖科技股份有限公司 Nung Sian Technology Ltd.">
+        <img src="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/theme/images/header.jpg" class="img-responsive" alt="穠纖科技股份有限公司 Nung Sian Technology Ltd.">
       </a>
     </div>
-    <div class="col-md-8">{% include 'tmp-name.html' %}</div>    
+    <!--<div class="col-md-8">{% include 'tmp-name.html' %}</div>    -->
     <div class="col-md-2">{% include 'tmp-lang.html' %}</div>
   </div>
 
@@ -70,5 +79,6 @@
   ga('send', 'pageview');
 
 </script>
+
 {% endif %}
 </html>
