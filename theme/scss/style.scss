@@ -5,7 +5,7 @@ http://css-tricks.com/tabs-with-round-out-borders/
 */
 
 $font-stack: "微軟正黑體", "Microsoft JhengHei", "Heiti TC", "Arial Unicode MS", "Arial";
-$primary-color-1: #24b6a1;
+$primary-color-1: #25ad99;
 $primary-color-2: #f69802;
 $primary-color-3: gray;
 $dotted-line-width: 3px;
@@ -20,7 +20,7 @@ html, body {
 
 h2 {
   color :$primary-color-1;
-  font-size: 1.7em;
+  font-size: 1.6em;
 }
 
 table {
@@ -92,6 +92,7 @@ a.lang {
 
 .footer {
   color: white;
+  font-size: small;
   margin-top: 5px;
   font-weight: bold;
   text-align: center;
