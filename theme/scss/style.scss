@@ -13,22 +13,24 @@ $dotted-line-width: 3px;
 html, body {
   font-family: $font-stack;
   color: $primary-color-1;
-  max-width: 980px;
+  max-width: 1000px;
+  font-size: 1em;
 }
 
 
 h2 {
   color :$primary-color-1;
+  font-size: 1.17em;
 }
 
 table {
 	border-style: solid;
     border-width: 1px;
 	border-color: $primary-color-1;
-	padding-top: 3px;
-    padding-right: 3px;
-    padding-bottom: 3px;
-    padding-left: 3px;
+	padding-top: 0.2em;
+    padding-right: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 0.2em;
 	width: 90%;
 }
 
@@ -37,12 +39,12 @@ th {
 	background-color: $primary-color-1;
 	text-align: center;
 	border-style: solid;
-	border-width: 1px;
+	border-width: 0.1em;
 	border-color:white;
 }
 td {
 	border-style: solid;
-	border-width: 1px;	
+	border-width: 0.1em;	
 	border-color:$primary-color-1;
 }
 
@@ -77,7 +79,7 @@ a.lang {
 
     > a {
       color: white;
-      font-size: 20px;
+      font-size: 1.2em;
       font-weight: bold;
     }
 
