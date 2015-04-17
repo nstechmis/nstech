@@ -14,8 +14,7 @@
     <div class="item active">
       <img class="img-responsive center-block" src="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/theme/images/vision_img.jpg" alt="vision">
       <div class="carousel-caption">
-        We create safe, degradable, eco-friendly and recyclable materials for our health and the sustainability of the environment.<br>
-        
+        We create safe, degradable, eco-friendly and recyclable materials for our health and the sustainability of the environment.
       </div>
     </div>
 	<!---
