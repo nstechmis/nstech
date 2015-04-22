@@ -1,0 +1,7 @@
+
+Language:
+
+a:hover a:active{
+    color: #FF00FF;
+	text-shadow: 2px 2px #ff0000;
+}
